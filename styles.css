@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.countdown-container {
+  background-color: #ffffff;
+  padding: 40px; /* Increased padding for more height */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 450px; /* Increased width */
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.input-container input {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-container button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  color: white;
+  background-color: #00796b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.input-container button:hover {
+  background-color: #004d40;
+}
+
+#countdown {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+#countdown div {
+  background-color: #00796b;
+  color: white;
+  width: 80px;
+  padding: 15px 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+#countdown div span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #d32f2f;
+}
