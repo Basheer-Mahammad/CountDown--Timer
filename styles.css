@@ -15,8 +15,33 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 450px; /* Increased width */
+  width: 90%; /* Adjust as needed */
+  max-width: 450px; /* Set a maximum width for larger screens */
 }
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .countdown-container {
+    width: 95%; /* Occupies almost the entire width on smaller screens */
+    padding: 30px; /* Reduced padding for smaller screens */
+  }
+}
+
+/* Media query for smaller mobile screens */
+@media (max-width: 500px) {
+  .countdown-container {
+    width: 98%; /* Occupies almost the entire width on very small screens */
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+  #countdown {
+    flex-direction: column; /* Stack countdown elements vertically */
+  }
+  #countdown div {
+    width: 100%; /* Full width for countdown elements */
+    margin-bottom: 10px; /* Add spacing between elements */
+  }
+}
+
 
 h1 {
   font-size: 1.5rem;
@@ -24,23 +49,23 @@ h1 {
   color: #00796b;
 }
 
-.input-container {
+.inputcontainer {
   margin-bottom: 20px;
 }
 
-.input-container label {
+.inputcontainer label {
   font-size: 1rem;
   margin-right: 10px;
 }
 
-.input-container input {
+.inputcontainer input {
   padding: 8px;
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-.input-container button {
+.inputcontainer button {
   padding: 8px 16px;
   font-size: 1rem;
   color: white;
@@ -51,7 +76,7 @@ h1 {
   margin-top: 10px;
 }
 
-.input-container button:hover {
+.inputcontainer button:hover {
   background-color: #004d40;
 }
 
