@@ -11,34 +11,34 @@ body {
 
 .countdown-container {
   background-color: #ffffff;
-  padding: 40px; /* Increased padding for more height */
+  padding: 40px; 
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 90%; /* Adjust as needed */
-  max-width: 450px; /* Set a maximum width for larger screens */
+  width: 90%; 
+  max-width: 450px; 
 }
 
 /* Media query for tablets and smaller screens */
 @media (max-width: 768px) {
   .countdown-container {
-    width: 95%; /* Occupies almost the entire width on smaller screens */
-    padding: 30px; /* Reduced padding for smaller screens */
+    width: 95%; 
+    padding: 30px; 
   }
 }
 
 /* Media query for smaller mobile screens */
 @media (max-width: 500px) {
   .countdown-container {
-    width: 98%; /* Occupies almost the entire width on very small screens */
-    padding: 20px; /* Reduced padding for smaller screens */
+    width: 98%; 
+    padding: 20px; 
   }
   #countdown {
     flex-direction: column; /* Stack countdown elements vertically */
   }
   #countdown div {
-    width: 100%; /* Full width for countdown elements */
-    margin-bottom: 10px; /* Add spacing between elements */
+    width: 100%; 
+    margin-bottom: 10px; 
   }
 }
 
