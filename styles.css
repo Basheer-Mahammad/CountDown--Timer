@@ -34,7 +34,12 @@ body {
     padding: 20px; 
   }
   #countdown {
-    flex-direction: column; /* Stack countdown elements vertically */
+    display: flex;
+    flex-direction: row ; /* Stack rows horizantally */
+    flex-wrap: wrap; /* Wrap the rows if they don't fit in the container */
+    justify-content: center; /* Center the rows */
+    gap: 10px; /* Add space between the rows */
+
   }
   #countdown div {
     width: 100%; 
